@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.getfitivity</groupId>
+    <artifactId>fitivity-maven-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <!-- dependency versions -->
+        <appengine.target.version>1.8.7</appengine.target.version>
+    </properties>
+
+    <scm>
+        <connection>
+            scm:git:file:${project.basedir}
+        </connection>
+        <developerConnection>
+            scm:git:file:${project.basedir}
+        </developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.5.1</version>
+                    <configuration>
+                        <source>1.6</source>
+                        <target>1.6</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>com.google.appengine</groupId>
+                    <artifactId>appengine-maven-plugin</artifactId>
+                    <version>${appengine.target.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.3.2</version>
+                    <configuration>
+                        <goals>install</goals>
+                        <!-- override deploy goals, since we don't publish to an external maven repo (we just install to local repo) -->
+                        <localCheckout>true</localCheckout>
+                        <!-- don't checkout from upstream git repo -->
+                        <pushChanges>false</pushChanges>
+                        <!-- don't push changes to upstream git repo -->
+                        <tagNameFormat>@{project.version}</tagNameFormat>
+                        <!-- use "X.Y.Z" labels in git -->
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.3.2</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-enforcer-plugin</artifactId>
+                    <version>1.1.1</version>
+                    <executions>
+                        <execution>
+                            <id>enforce</id>
+                            <configuration>
+                                <rules>
+                                    <DependencyConvergence />
+                                </rules>
+                            </configuration>
+                            <goals>
+                                <goal>enforce</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+    <profiles>
+        <profile>
+            <id>fitivity-test</id>
+            <properties>
+                <!-- this value is interpolated into app.yaml -->
+                <appengine.app.name>fitivity-webservice-test</appengine.app.name>
+            </properties>
+        </profile>
+        <profile>
+            <id>fitivity-prod</id>
+            <properties>
+                <!-- this value is interpolated into app.yaml -->
+                <appengine.app.name>fitivity-webservice</appengine.app.name>
+            </properties>
+        </profile>
+    </profiles>
+</project>
