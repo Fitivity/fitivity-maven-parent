@@ -10,6 +10,13 @@
     <properties>
         <!-- dependency versions -->
         <appengine.target.version>1.8.7</appengine.target.version>
+
+        <!--  plugin versions -->
+        <maven-enforcer-plugin.version>1.1.1</maven-enforcer-plugin.version>
+        <maven-surefire-plugin.version>2.14</maven-surefire-plugin.version>
+        <maven-release-plugin.version>2.3.2</maven-release-plugin.version>
+        <maven-compiler-plugin.version>2.5.1</maven-compiler-plugin.version>
+
     </properties>
 
     <scm>
@@ -28,22 +35,18 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>2.5.1</version>
+                    <version>${maven-compiler-plugin.version}</version>
                     <configuration>
-                        <source>1.6</source>
-                        <target>1.6</target>
+                        <source>1.7</source>
+                        <target>1.7</target>
                     </configuration>
                 </plugin>
-                <plugin>
-                    <groupId>com.google.appengine</groupId>
-                    <artifactId>appengine-maven-plugin</artifactId>
-                    <version>${appengine.target.version}</version>
-                </plugin>
+
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>2.3.2</version>
+                    <version>${maven-release-plugin.version}</version>
                     <configuration>
                         <goals>install</goals>
                         <!-- override deploy goals, since we don't publish to an external maven repo (we just install to local repo) -->
@@ -55,32 +58,35 @@
                         <!-- use "X.Y.Z" labels in git -->
                     </configuration>
                 </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-release-plugin</artifactId>
-                    <version>2.3.2</version>
-                </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>1.1.1</version>
-                    <executions>
-                        <execution>
-                            <id>enforce</id>
-                            <configuration>
-                                <rules>
-                                    <DependencyConvergence />
-                                </rules>
-                            </configuration>
-                            <goals>
-                                <goal>enforce</goal>
-                            </goals>
-                        </execution>
-                    </executions>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven-surefire-plugin.version}</version>
                 </plugin>
+
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>${maven-enforcer-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>enforce</id>
+                        <configuration>
+                            <rules>
+                                <DependencyConvergence />
+                            </rules>
+                        </configuration>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
     <profiles>
         <profile>
