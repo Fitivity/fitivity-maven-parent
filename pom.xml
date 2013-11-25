@@ -16,6 +16,7 @@
         <maven-surefire-plugin.version>2.14</maven-surefire-plugin.version>
         <maven-release-plugin.version>2.3.2</maven-release-plugin.version>
         <maven-compiler-plugin.version>2.5.1</maven-compiler-plugin.version>
+        <maven-war-plugin.version>2.3</maven-war-plugin.version>
 
     </properties>
 
@@ -63,6 +64,21 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${maven-surefire-plugin.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>${maven-war-plugin.version}</version>
+                    <configuration>
+                        <webResources>
+                            <resource>
+                                <directory>${basedir}/src/main/webapp/WEB-INF</directory>
+                                <filtering>true</filtering>
+                                <targetPath>WEB-INF</targetPath>
+                            </resource>
+                        </webResources>
+                    </configuration>
                 </plugin>
 
             </plugins>
