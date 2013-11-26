@@ -110,6 +110,8 @@
             <properties>
                 <!-- this value is interpolated into app.yaml -->
                 <appengine.app.name>fitivity-webservice-test</appengine.app.name>
+                <!-- this is interpolated into config.js in the event-cms app -->
+                <fitivity-url.api-admin>http://api-admin.fitivity-webservice-test.appspot.com</fitivity-url.api-admin>
             </properties>
         </profile>
         <profile>
@@ -117,7 +119,19 @@
             <properties>
                 <!-- this value is interpolated into app.yaml -->
                 <appengine.app.name>fitivity-webservice</appengine.app.name>
+                <!-- this is interpolated into config.js in the event-cms app -->
+                <fitivity-url.api-admin>http://api-admin.fitivity-webservice.appspot.com</fitivity-url.api-admin>
             </properties>
         </profile>
+        <profile>
+            <id>fitivity-local-dev</id>
+            <properties>
+                <!-- this value is interpolated into app.yaml -->
+                <appengine.app.name>fitivity-webservice</appengine.app.name>
+                <!-- this is interpolated into config.js in the event-cms app -->
+                <fitivity-url.api-admin>http://localhost:8080</fitivity-url.api-admin>
+            </properties>
+        </profile>
+
     </profiles>
 </project>
