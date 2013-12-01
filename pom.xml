@@ -9,7 +9,7 @@
 
     <properties>
         <!-- dependency versions -->
-        <appengine.target.version>1.8.7</appengine.target.version>
+        <appengine.target.version>1.8.8</appengine.target.version>
 
         <!--  plugin versions -->
         <maven-enforcer-plugin.version>1.1.1</maven-enforcer-plugin.version>
@@ -110,8 +110,10 @@
             <properties>
                 <!-- this value is interpolated into app.yaml -->
                 <appengine.app.name>fitivity-webservice-test</appengine.app.name>
-                <!-- this is interpolated into config.js in the event-cms app -->
-                <fitivity-url.api-admin>http://api-admin.fitivity-webservice-test.appspot.com</fitivity-url.api-admin>
+
+                <!-- these values are used in the CMS apps -->
+                <fitivity.env.name>Test</fitivity.env.name>
+                <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice-test.appspot.com</fitivity.env.api-admin-base-url>
             </properties>
         </profile>
         <profile>
@@ -119,8 +121,10 @@
             <properties>
                 <!-- this value is interpolated into app.yaml -->
                 <appengine.app.name>fitivity-webservice</appengine.app.name>
-                <!-- this is interpolated into config.js in the event-cms app -->
-                <fitivity-url.api-admin>http://api-admin.fitivity-webservice.appspot.com</fitivity-url.api-admin>
+
+                <!-- these values are used in the CMS apps -->
+                <fitivity.env.name>Test</fitivity.env.name>
+                <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice.appspot.com</fitivity.env.api-admin-base-url>
             </properties>
         </profile>
         <profile>
@@ -128,8 +132,10 @@
             <properties>
                 <!-- this value is interpolated into app.yaml -->
                 <appengine.app.name>fitivity-webservice</appengine.app.name>
-                <!-- this is interpolated into config.js in the event-cms app -->
-                <fitivity-url.api-admin>http://localhost:8080</fitivity-url.api-admin>
+
+                <!-- these values are used in the CMS apps -->
+                <fitivity.env.name>Local Dev</fitivity.env.name>
+                <fitivity.env.api-admin-base-url>http://localhost:8080</fitivity.env.api-admin-base-url>
             </properties>
         </profile>
 
