@@ -73,9 +73,8 @@
                     <configuration>
                         <webResources>
                             <resource>
-                                <directory>${basedir}/src/main/webapp/WEB-INF</directory>
+                                <directory>${basedir}/src/main/webapp</directory>
                                 <filtering>true</filtering>
-                                <targetPath>WEB-INF</targetPath>
                             </resource>
                         </webResources>
                     </configuration>
@@ -113,7 +112,7 @@
 
                 <!-- these values are used in the CMS apps -->
                 <fitivity.env.name>Test</fitivity.env.name>
-                <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice-test.appspot.com</fitivity.env.api-admin-base-url>
+                <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice-test.appspot.com/v1/</fitivity.env.api-admin-base-url>
                 <fitivity.env.google-api-browser-key>AIzaSyBZy6gDbyGaY5F9Lj-ho12cyFkTPLDMfrc</fitivity.env.google-api-browser-key>
             </properties>
         </profile>
@@ -125,7 +124,7 @@
 
                 <!-- these values are used in the CMS apps -->
                 <fitivity.env.name>Test</fitivity.env.name>
-                <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice.appspot.com</fitivity.env.api-admin-base-url>
+                <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice.appspot.com/v1/</fitivity.env.api-admin-base-url>
                 <fitivity.env.google-api-browser-key>AIzaSyAjO8WTYHhM5G3aY57glgczhT9n8cnTAGc</fitivity.env.google-api-browser-key>
             </properties>
         </profile>
@@ -137,7 +136,7 @@
 
                 <!-- these values are used in the CMS apps -->
                 <fitivity.env.name>Local Dev</fitivity.env.name>
-                <fitivity.env.api-admin-base-url>http://localhost:8080</fitivity.env.api-admin-base-url>
+                <fitivity.env.api-admin-base-url>http://localhost:8080/v1/</fitivity.env.api-admin-base-url>
                 <fitivity.env.google-api-browser-key></fitivity.env.google-api-browser-key>
             </properties>
         </profile>
