@@ -114,6 +114,9 @@
                 <fitivity.env.name>Test</fitivity.env.name>
                 <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice-test.appspot.com/v1/</fitivity.env.api-admin-base-url>
                 <fitivity.env.google-api-browser-key>AIzaSyBZy6gDbyGaY5F9Lj-ho12cyFkTPLDMfrc</fitivity.env.google-api-browser-key>
+
+                <!-- allowed origins for CORS requests.  Separate values with ";" delimiters -->
+                <fitivity.env.cors.allowed-origins>http://fitivity-cms.dev;http://event-cms.fitivity-webservice-test.appspot.com;http://workout-cms.fitivity-webservice-test.appspot.com</fitivity.env.cors.allowed-origins>
             </properties>
         </profile>
         <profile>
@@ -126,6 +129,9 @@
                 <fitivity.env.name>Test</fitivity.env.name>
                 <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice.appspot.com/v1/</fitivity.env.api-admin-base-url>
                 <fitivity.env.google-api-browser-key>AIzaSyAjO8WTYHhM5G3aY57glgczhT9n8cnTAGc</fitivity.env.google-api-browser-key>
+
+                <!-- allowed origins for CORS requests.  Separate values with ";" delimiters -->
+                <fitivity.env.cors.allowed-origins>http://event-cms.fitivity-webservice.appspot.com;http://workout-cms.fitivity-webservice.appspot.com</fitivity.env.cors.allowed-origins>
             </properties>
         </profile>
         <profile>
@@ -138,6 +144,9 @@
                 <fitivity.env.name>Local Dev</fitivity.env.name>
                 <fitivity.env.api-admin-base-url>http://localhost:8080/v1/</fitivity.env.api-admin-base-url>
                 <fitivity.env.google-api-browser-key></fitivity.env.google-api-browser-key>
+
+                <!-- allowed origins for CORS requests.  Caustion: only use "*" in a local dev env!!! -->
+                <fitivity.env.cors.allowed-origins>*</fitivity.env.cors.allowed-origins>
             </properties>
         </profile>
 
