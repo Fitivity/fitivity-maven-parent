@@ -8,10 +8,13 @@
     <packaging>pom</packaging>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        
         <!-- dependency versions -->
         <appengine.target.version>1.8.8</appengine.target.version>
 
         <!--  plugin versions -->
+        <build-helper-maven-plugin.version>1.8</build-helper-maven-plugin.version>
         <maven-enforcer-plugin.version>1.1.1</maven-enforcer-plugin.version>
         <maven-surefire-plugin.version>2.14</maven-surefire-plugin.version>
         <maven-release-plugin.version>2.3.2</maven-release-plugin.version>
@@ -64,6 +67,12 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${maven-surefire-plugin.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>${build-helper-maven-plugin.version}</version>
                 </plugin>
 
                 <plugin>
