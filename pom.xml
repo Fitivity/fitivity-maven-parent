@@ -135,7 +135,7 @@
                 <appengine.app.name>fitivity-webservice</appengine.app.name>
 
                 <!-- these values are used in the CMS apps -->
-                <fitivity.env.name>Test</fitivity.env.name>
+                <fitivity.env.name>Production</fitivity.env.name>
                 <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice.appspot.com/v1/</fitivity.env.api-admin-base-url>
                 <fitivity.env.google-api-browser-key>AIzaSyAjO8WTYHhM5G3aY57glgczhT9n8cnTAGc</fitivity.env.google-api-browser-key>
 
