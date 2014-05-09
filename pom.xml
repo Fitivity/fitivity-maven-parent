@@ -159,7 +159,7 @@
 
                 <!-- Environment variable-->
                 <fitivity.env.environment>PRODUCTION</fitivity.env.environment>
-                <fitivity.env.gcs.bucket.backup>fitivity-backups</fitivity.env.gcs.bucket.backup>
+                <fitivity.env.gcs.bucket.backup>fitivity-prod-backups</fitivity.env.gcs.bucket.backup>
 
                 <!-- these values are used in the CMS apps -->
                 <fitivity.env.name>Production</fitivity.env.name>
