@@ -147,7 +147,7 @@
                 <fitivity.env.google-api-browser-key>AIzaSyBZy6gDbyGaY5F9Lj-ho12cyFkTPLDMfrc</fitivity.env.google-api-browser-key>
 
                 <!-- allowed origins for CORS requests.  Separate values with ";" delimiters -->
-                <fitivity.env.cors.allowed-origins>http://fitivity-cms.dev;http://event-cms.fitivity-webservice-test.appspot.com;http://workout-cms.fitivity-webservice-test.appspot.com</fitivity.env.cors.allowed-origins>
+                <fitivity.env.cors.allowed-origins>http://event-cms.fitivity-cms.dev;http://workout-cms.fitivity-cms.dev;http://event-cms.fitivity-webservice-test.appspot.com;http://workout-cms.fitivity-webservice-test.appspot.com</fitivity.env.cors.allowed-origins>
                 <fitivity.env.gcs.bucket.images>fitivity-test-images</fitivity.env.gcs.bucket.images>
             </properties>
         </profile>
