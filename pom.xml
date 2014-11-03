@@ -144,7 +144,7 @@
                 <!-- these values are used in the CMS apps -->
                 <fitivity.env.name>Test</fitivity.env.name>
                 <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice-test.appspot.com/v1/</fitivity.env.api-admin-base-url>
-                <fitivity.env.google-api-browser-key>AIzaSyBZy6gDbyGaY5F9Lj-ho12cyFkTPLDMfrc</fitivity.env.google-api-browser-key>
+                <fitivity.env.google-api-browser-key>AIzaSyBpIgQzbElTHs9DqQNam7zkwPjOnO4BqIU</fitivity.env.google-api-browser-key>
 
                 <!-- allowed origins for CORS requests.  Separate values with ";" delimiters -->
                 <fitivity.env.cors.allowed-origins>http://event-cms.fitivity-cms.dev;http://workout-cms.fitivity-cms.dev;http://event-cms.fitivity-webservice-test.appspot.com;http://workout-cms.fitivity-webservice-test.appspot.com</fitivity.env.cors.allowed-origins>
