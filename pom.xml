@@ -114,40 +114,13 @@
     </build>
     <profiles>
         <profile>
-            <id>fitivity-test</id>
-            <properties>
-                <!-- this value is interpolated into app.yaml -->
-                <appengine.app.name>fitivity-webservice-test</appengine.app.name>
-
-                <!-- these values are used in the CMS apps -->
-                <fitivity.env.name>Test</fitivity.env.name>
-                <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice-test.appspot.com/v1/</fitivity.env.api-admin-base-url>
-                <fitivity.env.google-api-browser-key>AIzaSyBZy6gDbyGaY5F9Lj-ho12cyFkTPLDMfrc</fitivity.env.google-api-browser-key>
-
-                <!-- allowed origins for CORS requests.  Separate values with ";" delimiters -->
-                <fitivity.env.cors.allowed-origins>http://fitivity-cms.dev;http://event-cms.fitivity-webservice-test.appspot.com;http://workout-cms.fitivity-webservice-test.appspot.com</fitivity.env.cors.allowed-origins>
-            </properties>
-        </profile>
-        <profile>
-            <id>fitivity-prod</id>
-            <properties>
-                <!-- this value is interpolated into app.yaml -->
-                <appengine.app.name>fitivity-webservice</appengine.app.name>
-
-                <!-- these values are used in the CMS apps -->
-                <fitivity.env.name>Production</fitivity.env.name>
-                <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice.appspot.com/v1/</fitivity.env.api-admin-base-url>
-                <fitivity.env.google-api-browser-key>AIzaSyAjO8WTYHhM5G3aY57glgczhT9n8cnTAGc</fitivity.env.google-api-browser-key>
-
-                <!-- allowed origins for CORS requests.  Separate values with ";" delimiters -->
-                <fitivity.env.cors.allowed-origins>http://event-cms.fitivity-webservice.appspot.com;http://workout-cms.fitivity-webservice.appspot.com</fitivity.env.cors.allowed-origins>
-            </properties>
-        </profile>
-        <profile>
             <id>fitivity-local-dev</id>
             <properties>
                 <!-- this value is interpolated into app.yaml -->
                 <appengine.app.name>fitivity-webservice</appengine.app.name>
+
+                <!-- Environment variable-->
+                <fitivity.env.environment>DEVELOPMENT</fitivity.env.environment>
 
                 <!-- these values are used in the CMS apps -->
                 <fitivity.env.name>Local Dev</fitivity.env.name>
@@ -156,8 +129,47 @@
 
                 <!-- allowed origins for CORS requests.  Caustion: only use "*" in a local dev env!!! -->
                 <fitivity.env.cors.allowed-origins>*</fitivity.env.cors.allowed-origins>
+                <fitivity.env.gcs.bucket.images>fitivity-localdev-images</fitivity.env.gcs.bucket.images>
             </properties>
         </profile>
+        <profile>
+            <id>fitivity-test</id>
+            <properties>
+                <!-- this value is interpolated into app.yaml -->
+                <appengine.app.name>fitivity-webservice-test</appengine.app.name>
 
+                <!-- Environment variable-->
+                <fitivity.env.environment>TEST</fitivity.env.environment>
+
+                <!-- these values are used in the CMS apps -->
+                <fitivity.env.name>Test</fitivity.env.name>
+                <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice-test.appspot.com/v1/</fitivity.env.api-admin-base-url>
+                <fitivity.env.google-api-browser-key>AIzaSyBpIgQzbElTHs9DqQNam7zkwPjOnO4BqIU</fitivity.env.google-api-browser-key>
+
+                <!-- allowed origins for CORS requests.  Separate values with ";" delimiters -->
+                <fitivity.env.cors.allowed-origins>http://event-cms.fitivity-cms.dev;http://workout-cms.fitivity-cms.dev;http://event-cms.fitivity-webservice-test.appspot.com;http://workout-cms.fitivity-webservice-test.appspot.com</fitivity.env.cors.allowed-origins>
+                <fitivity.env.gcs.bucket.images>fitivity-test-images</fitivity.env.gcs.bucket.images>
+            </properties>
+        </profile>
+        <profile>
+            <id>fitivity-prod</id>
+            <properties>
+                <!-- this value is interpolated into app.yaml -->
+                <appengine.app.name>fitivity-webservice</appengine.app.name>
+
+                <!-- Environment variable-->
+                <fitivity.env.environment>PRODUCTION</fitivity.env.environment>
+                <fitivity.env.gcs.bucket.backup>fitivity-prod-backups</fitivity.env.gcs.bucket.backup>
+
+                <!-- these values are used in the CMS apps -->
+                <fitivity.env.name>Production</fitivity.env.name>
+                <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice.appspot.com/v1/</fitivity.env.api-admin-base-url>
+                <fitivity.env.google-api-browser-key>AIzaSyAjO8WTYHhM5G3aY57glgczhT9n8cnTAGc</fitivity.env.google-api-browser-key>
+
+                <!-- allowed origins for CORS requests.  Separate values with ";" delimiters -->
+                <fitivity.env.cors.allowed-origins>http://event-cms.fitivity-webservice.appspot.com;http://workout-cms.fitivity-webservice.appspot.com</fitivity.env.cors.allowed-origins>
+                <fitivity.env.gcs.bucket.images>fitivity-prod-images</fitivity.env.gcs.bucket.images>
+            </properties>
+        </profile>
     </profiles>
 </project>
