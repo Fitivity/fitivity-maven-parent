@@ -167,8 +167,27 @@
                 <fitivity.env.google-api-browser-key>AIzaSyBpIgQzbElTHs9DqQNam7zkwPjOnO4BqIU</fitivity.env.google-api-browser-key>
 
                 <!-- allowed origins for CORS requests.  Separate values with ";" delimiters -->
-                <fitivity.env.cors.allowed-origins>http://event.fitivity-cms.dev;http://workout.fitivity-cms.dev;http://event-cms.fitivity-webservice-test.appspot.com;http://workout-cms.fitivity-webservice-test.appspot.com</fitivity.env.cors.allowed-origins>
+                <fitivity.env.cors.allowed-origins>http://event.fitivity-cms.dev;http://workout.fitivity-cms.dev;http://event.fitivity-webservice-test.appspot.com;http://workout.fitivity-webservice-test.appspot.com</fitivity.env.cors.allowed-origins>
                 <fitivity.env.gcs.bucket.images>fitivity-test-images</fitivity.env.gcs.bucket.images>
+            </properties>
+        </profile>
+        <profile>
+            <id>fitivity-staging</id>
+            <properties>
+                <!-- this value is interpolated into app.yaml -->
+                <appengine.app.name>fitivity-webservice-staging</appengine.app.name>
+
+                <!-- Environment variable-->
+                <fitivity.env.environment>TEST</fitivity.env.environment>
+
+                <!-- these values are used in the CMS apps -->
+                <fitivity.env.name>Test</fitivity.env.name>
+                <fitivity.env.api-admin-base-url>http://api-admin.fitivity-webservice-staging.appspot.com/v1/</fitivity.env.api-admin-base-url>
+                <fitivity.env.google-api-browser-key>AIzaSyBpIgQzbElTHs9DqQNam7zkwPjOnO4BqIU</fitivity.env.google-api-browser-key>
+
+                <!-- allowed origins for CORS requests.  Separate values with ";" delimiters -->
+                <fitivity.env.cors.allowed-origins>http://event.fitivity-cms.dev;http://workout.fitivity-cms.dev;http://event.fitivity-webservice-staging.appspot.com;http://workout.fitivity-webservice-staging.appspot.com</fitivity.env.cors.allowed-origins>
+                <fitivity.env.gcs.bucket.images>fitivity-staging-images</fitivity.env.gcs.bucket.images>
             </properties>
         </profile>
         <profile>
