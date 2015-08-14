@@ -131,6 +131,7 @@
                 <!-- allowed origins for CORS requests.  Caustion: only use "*" in a local dev env!!! -->
                 <fitivity.env.cors.allowed-origins>*</fitivity.env.cors.allowed-origins>
                 <fitivity.env.gcs.bucket.images>fitivity-localdev-images</fitivity.env.gcs.bucket.images>
+                <fitivity.env.gcs.bucket.videos>fitivity-localdev-videos</fitivity.env.gcs.bucket.videos>
             </properties>
         </profile>
         <profile>
@@ -188,6 +189,7 @@
                 <!-- allowed origins for CORS requests.  Separate values with ";" delimiters -->
                 <fitivity.env.cors.allowed-origins>http://event.fitivity-cms.dev;http://workout.fitivity-cms.dev;http://event.fitivity-webservice-staging.appspot.com;http://workout.fitivity-webservice-staging.appspot.com</fitivity.env.cors.allowed-origins>
                 <fitivity.env.gcs.bucket.images>fitivity-staging-images</fitivity.env.gcs.bucket.images>
+                <fitivity.env.gcs.bucket.videos>fitivity-staging-videos</fitivity.env.gcs.bucket.videos>
             </properties>
         </profile>
         <profile>
