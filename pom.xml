@@ -151,6 +151,7 @@
                 <!-- allowed origins for CORS requests.  Separate values with ";" delimiters -->
                 <fitivity.env.cors.allowed-origins>http://event.fitivity-cms.dev;http://workout.fitivity-cms.dev;http://event.fitivity-webservice-dev.appspot.com;http://workout.fitivity-webservice-dev.appspot.com</fitivity.env.cors.allowed-origins>
                 <fitivity.env.gcs.bucket.images>fitivity-dev-images</fitivity.env.gcs.bucket.images>
+                <fitivity.env.gcs.bucket.videos>fitivity-staging-videos</fitivity.env.gcs.bucket.videos>
             </properties>
         </profile>
         <profile>
@@ -170,6 +171,7 @@
                 <!-- allowed origins for CORS requests.  Separate values with ";" delimiters -->
                 <fitivity.env.cors.allowed-origins>http://event.fitivity-cms.dev;http://workout.fitivity-cms.dev;http://event.fitivity-webservice-test.appspot.com;http://workout.fitivity-webservice-test.appspot.com</fitivity.env.cors.allowed-origins>
                 <fitivity.env.gcs.bucket.images>fitivity-test-images</fitivity.env.gcs.bucket.images>
+                <fitivity.env.gcs.bucket.videos>fitivity-staging-videos</fitivity.env.gcs.bucket.videos>
             </properties>
         </profile>
         <profile>
@@ -210,6 +212,7 @@
                 <!-- allowed origins for CORS requests.  Separate values with ";" delimiters -->
                 <fitivity.env.cors.allowed-origins>http://event.fitivity-webservice.appspot.com;http://workout.fitivity-webservice.appspot.com</fitivity.env.cors.allowed-origins>
                 <fitivity.env.gcs.bucket.images>fitivity-prod-images</fitivity.env.gcs.bucket.images>
+                <fitivity.env.gcs.bucket.videos>fitivity-staging-videos</fitivity.env.gcs.bucket.videos>
             </properties>
         </profile>
     </profiles>
