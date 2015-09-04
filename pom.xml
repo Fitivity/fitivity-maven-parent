@@ -132,6 +132,7 @@
                 <fitivity.env.cors.allowed-origins>*</fitivity.env.cors.allowed-origins>
                 <fitivity.env.gcs.bucket.images>fitivity-localdev-images</fitivity.env.gcs.bucket.images>
                 <fitivity.env.gcs.bucket.videos>fitivity-localdev-videos</fitivity.env.gcs.bucket.videos>
+                <fitivity.env.gcs.bucket.apnCertificates>fitivity-localdev-apn-certificates</fitivity.env.gcs.bucket.apnCertificates>
             </properties>
         </profile>
         <profile>
@@ -152,6 +153,7 @@
                 <fitivity.env.cors.allowed-origins>http://event.fitivity-cms.dev;http://workout.fitivity-cms.dev;http://event.fitivity-webservice-dev.appspot.com;http://workout.fitivity-webservice-dev.appspot.com</fitivity.env.cors.allowed-origins>
                 <fitivity.env.gcs.bucket.images>fitivity-dev-images</fitivity.env.gcs.bucket.images>
                 <fitivity.env.gcs.bucket.videos>fitivity-dev-videos</fitivity.env.gcs.bucket.videos>
+                <fitivity.env.gcs.bucket.apnCertificates>fitivity-dev-apn-certificates</fitivity.env.gcs.bucket.apnCertificates>
             </properties>
         </profile>
         <profile>
@@ -172,6 +174,7 @@
                 <fitivity.env.cors.allowed-origins>http://event.fitivity-cms.dev;http://workout.fitivity-cms.dev;http://event.fitivity-webservice-test.appspot.com;http://workout.fitivity-webservice-test.appspot.com</fitivity.env.cors.allowed-origins>
                 <fitivity.env.gcs.bucket.images>fitivity-test-images</fitivity.env.gcs.bucket.images>
                 <fitivity.env.gcs.bucket.videos>fitivity-test-videos</fitivity.env.gcs.bucket.videos>
+                <fitivity.env.gcs.bucket.apnCertificates>fitivity-test-apn-certificates</fitivity.env.gcs.bucket.apnCertificates>
             </properties>
         </profile>
         <profile>
@@ -192,6 +195,7 @@
                 <fitivity.env.cors.allowed-origins>http://event.fitivity-cms.dev;http://workout.fitivity-cms.dev;http://event.fitivity-webservice-staging.appspot.com;http://workout.fitivity-webservice-staging.appspot.com</fitivity.env.cors.allowed-origins>
                 <fitivity.env.gcs.bucket.images>fitivity-staging-images</fitivity.env.gcs.bucket.images>
                 <fitivity.env.gcs.bucket.videos>fitivity-staging-videos</fitivity.env.gcs.bucket.videos>
+                <fitivity.env.gcs.bucket.apnCertificates>fitivity-staging-apn-certificates</fitivity.env.gcs.bucket.apnCertificates>
             </properties>
         </profile>
         <profile>
@@ -213,6 +217,7 @@
                 <fitivity.env.cors.allowed-origins>http://event.fitivity-webservice.appspot.com;http://workout.fitivity-webservice.appspot.com</fitivity.env.cors.allowed-origins>
                 <fitivity.env.gcs.bucket.images>fitivity-prod-images</fitivity.env.gcs.bucket.images>
                 <fitivity.env.gcs.bucket.videos>fitivity-prod-videos</fitivity.env.gcs.bucket.videos>
+                <fitivity.env.gcs.bucket.apnCertificates>fitivity-prod-apn-certificates</fitivity.env.gcs.bucket.apnCertificates>
             </properties>
         </profile>
     </profiles>
