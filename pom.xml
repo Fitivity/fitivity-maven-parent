@@ -133,8 +133,8 @@
                 <fitivity.env.gcs.bucket.images>fitivity-localdev-images</fitivity.env.gcs.bucket.images>
                 <fitivity.env.gcs.bucket.videos>fitivity-localdev-videos</fitivity.env.gcs.bucket.videos>
                 <fitivity.env.gcs.bucket.apnCertificates>fitivity-localdev-apn-certificates</fitivity.env.gcs.bucket.apnCertificates>
-                <fitivity.env.clientId>290485487156-n31u1dteec593jq18f57nm62dnrjo1ds.apps.googleusercontent.com</fitivity.env.clientId>
-                <fitivity.env.clientSecret>lKwmI-YW3SfLw-D5PI1mi2XI</fitivity.env.clientSecret>
+                <fitivity.env.clientId>399718914324-mo8hclo4jnivk9488vpqjhpjjl7mfq3m.apps.googleusercontent.com</fitivity.env.clientId>
+                <fitivity.env.clientSecret>NcBablodFa8VNC1qDma4BVla</fitivity.env.clientSecret>
             </properties>
         </profile>
         <profile>
@@ -155,8 +155,8 @@
                 <fitivity.env.cors.allowed-origins>http://event.fitivity-cms.dev;http://workout.fitivity-cms.dev;http://event.fitivity-webservice-dev.appspot.com;http://workout.fitivity-webservice-dev.appspot.com</fitivity.env.cors.allowed-origins>
                 <fitivity.env.gcs.bucket.images>fitivity-dev-images</fitivity.env.gcs.bucket.images>
                 <fitivity.env.gcs.bucket.videos>fitivity-dev-videos</fitivity.env.gcs.bucket.videos>
-                <fitivity.env.gcs.bucket.apnCertificates>fitivity-dev-apn-certificates</fitivity.env.gcs.bucket.apnCertificates>
-                <fitivity.env.gcs.bucket.youtubeCertificates>fitivity-dev-youtube-certificates</fitivity.env.gcs.bucket.youtubeCertificates>
+                <fitivity.env.clientId>399718914324-mo8hclo4jnivk9488vpqjhpjjl7mfq3m.apps.googleusercontent.com</fitivity.env.clientId>
+                <fitivity.env.clientSecret>NcBablodFa8VNC1qDma4BVla</fitivity.env.clientSecret>
             </properties>
         </profile>
         <profile>
@@ -178,8 +178,8 @@
                 <fitivity.env.gcs.bucket.images>fitivity-test-images</fitivity.env.gcs.bucket.images>
                 <fitivity.env.gcs.bucket.videos>fitivity-test-videos</fitivity.env.gcs.bucket.videos>
                 <fitivity.env.gcs.bucket.apnCertificates>fitivity-test-apn-certificates</fitivity.env.gcs.bucket.apnCertificates>
-                <fitivity.env.clientId>290485487156-n31u1dteec593jq18f57nm62dnrjo1ds.apps.googleusercontent.com</fitivity.env.clientId>
-                <fitivity.env.clientSecret>lKwmI-YW3SfLw-D5PI1mi2XI</fitivity.env.clientSecret>
+                <fitivity.env.clientId>399718914324-mo8hclo4jnivk9488vpqjhpjjl7mfq3m.apps.googleusercontent.com</fitivity.env.clientId>
+                <fitivity.env.clientSecret>NcBablodFa8VNC1qDma4BVla</fitivity.env.clientSecret>
             </properties>
         </profile>
         <profile>
@@ -201,8 +201,8 @@
                 <fitivity.env.gcs.bucket.images>fitivity-staging-images</fitivity.env.gcs.bucket.images>
                 <fitivity.env.gcs.bucket.videos>fitivity-staging-videos</fitivity.env.gcs.bucket.videos>
                 <fitivity.env.gcs.bucket.apnCertificates>fitivity-staging-apn-certificates</fitivity.env.gcs.bucket.apnCertificates>
-                <fitivity.env.clientId>290485487156-n31u1dteec593jq18f57nm62dnrjo1ds.apps.googleusercontent.com</fitivity.env.clientId>
-                <fitivity.env.clientSecret>lKwmI-YW3SfLw-D5PI1mi2XI</fitivity.env.clientSecret>
+                <fitivity.env.clientId>399718914324-mo8hclo4jnivk9488vpqjhpjjl7mfq3m.apps.googleusercontent.com</fitivity.env.clientId>
+                <fitivity.env.clientSecret>NcBablodFa8VNC1qDma4BVla</fitivity.env.clientSecret>
             </properties>
         </profile>
         <profile>
@@ -225,8 +225,8 @@
                 <fitivity.env.gcs.bucket.images>fitivity-prod-images</fitivity.env.gcs.bucket.images>
                 <fitivity.env.gcs.bucket.videos>fitivity-prod-videos</fitivity.env.gcs.bucket.videos>
                 <fitivity.env.gcs.bucket.apnCertificates>fitivity-prod-apn-certificates</fitivity.env.gcs.bucket.apnCertificates>
-                <fitivity.env.clientId>290485487156-n31u1dteec593jq18f57nm62dnrjo1ds.apps.googleusercontent.com</fitivity.env.clientId>
-                <fitivity.env.clientSecret>lKwmI-YW3SfLw-D5PI1mi2XI</fitivity.env.clientSecret>
+                <fitivity.env.clientId>399718914324-mo8hclo4jnivk9488vpqjhpjjl7mfq3m.apps.googleusercontent.com</fitivity.env.clientId>
+                <fitivity.env.clientSecret>NcBablodFa8VNC1qDma4BVla</fitivity.env.clientSecret>
             </properties>
         </profile>
     </profiles>
